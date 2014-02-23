@@ -1,0 +1,43 @@
+.blip-banner {
+
+	position: absolute;
+
+	left: 50%;
+	bottom: 20%;
+
+	margin-left: -38%;
+
+	width: 66%;
+
+	border: 3px solid black;
+	border-radius: 3em;
+	padding: 1em;
+
+	color: white;
+	font-size: 20px;
+	font-family: verdana;
+	text-align: center;
+	z-index: 2094;
+
+	opacity: 1;
+	transition: opacity 1s ease 0s;
+
+	background-image: url("/resource/ui-bg-dbg_40x40.png");
+}
+
+.blip-banner.error {
+	background-image: url("/resource/ui-bg-err_40x40.png");
+}
+
+.blip-banner.good {
+	background-image: url("/resource/ui-bg-scs_40x40.png");
+}
+
+.blip-banner.warn {
+	background-image: url("/resource/ui-bg-wrn_40x40.png");
+	color: black;
+}
+
+.blip-banner.retire {
+	opacity: 0;
+}
